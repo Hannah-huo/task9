@@ -1,2 +1,8 @@
 // Write your code here
-module.exports = class Class {}
+module.exports = function Class(grade) {
+    this.grade = grade;
+
+    this.assignLeader = function(student) {
+        student.isLeader = true;
+    }
+}
